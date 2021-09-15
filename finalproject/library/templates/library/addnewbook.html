@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "description" content = "HTML For Beginners">
+        <title>Create A Nice Form</title>
+        <link rel = "stylesheet" href = "style.css">
+        <style>
+            body 
+            {
+                background:#e99494; 
+                font-family: Arial,Tahoma;
+            
+            }
+            fieldset
+            {
+                width: 200px;
+                height: 300px;
+                background:#FFF;
+                border:1 px solid #CCC;
+                padding :20px;
+                margin-bottom : 20 px;
+                width:500px;
+                margin:20px auto
+            }
+            legend
+            {
+              background: #FFF;
+              border : 1 px solid #CCC;
+              padding : 10 px;  
+            }
+            
+            label 
+            {
+                margin-bottom:10px;
+                display:block;
+            }
+            input 
+            {
+                margin-bottom:10px;
+            }
+
+            input[type = "text"],
+            input[type = "password"],
+            textarea
+
+            {padding : 8px; width:300px; display:block}
+
+            hr { border : 1px solid #EEE}
+
+            textarea
+            {
+                height : 200px;
+                margin-bottom:10px;
+                
+
+            }
+            
+        </style>
+        <script></script>       
+    </head>
+    <body>
+        <form name = "register">
+            <fieldset>
+                <legend>Add new book</legend>
+                <label>Title</label>
+                <input type = "text" name = "title">
+                <label>Author Of The Book</label>
+                <input type = "text" name = "author">
+                <label>image</label>
+                <input type = "text" name = "image">
+                <label>Status</label>
+                <select name = "Status">
+                    <option name = "available">Available</option>
+                    <option name = "borrowed">Borrowed</option>
+                </select>
+            </fieldset>
+        </form>
+    </body>
+</html>

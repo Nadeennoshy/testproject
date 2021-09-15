@@ -1,0 +1,34 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>student page</title>
+    <link rel="stylesheet" href="{% static 'library/css/style5.css' %}">
+</head>
+<body>
+    <div>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Cover</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in book_items %}
+                   <tr>
+                        <td>{{item.title}}</td>
+                        <td>{{item.author}} </td>
+                        <td><img src="{% static 'library/images/'|add:item.image %}" width="150px"></td>
+                        <td>{{item.status}}</td>
+                    </tr>
+                 {% endfor %}
+                
+            </tbody>
+        </table>
+    </div>  
+</body>
+</html>
